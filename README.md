@@ -4,7 +4,7 @@ An animation that says BLM in a LGBTQ+ color theme
 ![pridekitty](https://user-images.githubusercontent.com/111705651/186676443-69e8513d-f0c5-4ab1-98c4-79f39b7de464.png)
 
 
-## Setup
+## Setup with Linux
 
 Open terminal 
 
@@ -24,7 +24,15 @@ You can run the C application standalone.
 To use the telnet server, you need to add a configuration that runs:
 
     pridekitty -t
+    
+## Setup with MacOS
 
+Open Terminal
+    sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew install git && make
+    git clone https://github.com/ChrisMion2022/Pridekitty
+    cd pridekitty && make
+    ./Pridekitty/src/pridekitty
 
 ## References, etc.
 
