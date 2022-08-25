@@ -35,7 +35,7 @@ Get Homebrew first
    
 Get additional apps   
     
-    brew install git && brew install make
+    brew install git && brew install make && brew install automake
 
 Get PrideKitty
     
