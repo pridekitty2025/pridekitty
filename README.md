@@ -44,10 +44,11 @@ Get PrideKitty
 Make pridekitty    
     
     cd pridekitty && make
+    mv ./Pridekitty/src/pridekitty /usr/local/bin/pridekitty
    
 Run pridekitty   
     
-    ./Pridekitty/src/pridekitty
+    pridekitty
 
 ## References, etc.
 
