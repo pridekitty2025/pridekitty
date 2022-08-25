@@ -33,7 +33,7 @@ Get Homebrew first
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    
-Get additional apps   
+Get additional apps (optional)   
     
     brew install git && brew install make && brew install automake
 
