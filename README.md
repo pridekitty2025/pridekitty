@@ -2,15 +2,15 @@
 
 ![pridekitty](https://user-images.githubusercontent.com/111705651/186676443-69e8513d-f0c5-4ab1-98c4-79f39b7de464.png)
 
-## Beginner Instructions
-
-open terminal 
-sudo apt install git-all
-run command git clone https://github.com/ChrisMion2022/Pridekitty
 
 ## Setup
 
-First build the C application:
+Open terminal 
+
+    sudo apt install git-all
+    git clone https://github.com/ChrisMion2022/Pridekitty
+
+Then build the C application:
 
     make && cd src
     sudo cp pridekittty /usr/bin/pridekitty
