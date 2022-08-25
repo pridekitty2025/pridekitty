@@ -36,8 +36,17 @@ Get Homebrew first
 Get additional apps   
     
     brew install git && make
+
+Get PrideKitty
+    
     git clone https://github.com/ChrisMion2022/Pridekitty
+    
+Make pridekitty    
+    
     cd pridekitty && make
+   
+Run pridekitty   
+    
     ./Pridekitty/src/pridekitty
 
 ## References, etc.
