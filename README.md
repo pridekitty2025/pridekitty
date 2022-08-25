@@ -43,8 +43,7 @@ Get PrideKitty
     
 Make pridekitty    
     
-    cd pridekitty && make
-    sudo mv ./src/pridekitty /usr/local/bin/
+    cd pridekitty && make && sudo mv ./src/pridekitty /usr/local/bin/
    
 Run pridekitty   
     
