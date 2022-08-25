@@ -27,8 +27,14 @@ To use the telnet server, you need to add a configuration that runs:
     
 ## Setup with MacOS
 
-Open Terminal
+first Open Terminal
+
+Get Homebrew first
+
     sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   
+Get additional apps   
+    
     brew install git && make
     git clone https://github.com/ChrisMion2022/Pridekitty
     cd pridekitty && make
