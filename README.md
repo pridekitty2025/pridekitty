@@ -1,5 +1,6 @@
 # pridekitty CLI
 
+![pridekitty](https://user-images.githubusercontent.com/111705651/186676443-69e8513d-f0c5-4ab1-98c4-79f39b7de464.png)
 
 
 ## Setup
