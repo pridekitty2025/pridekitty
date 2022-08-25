@@ -1,6 +1,6 @@
 # pridekitty CLI
 
-kgsrc.se/misc/pridekitty)
+
 
 ## Setup
 
