@@ -62,14 +62,17 @@ First run Powershell as Administrator
 
     cd $env:USERPROFILE
 
-Download and Install Chocolatey
+Download, Install WSL
 
-    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    wsl --install -d Ubuntu
+    
+Run as Administrator WSL
     
 Get additional apps (optional)
 
-    choco install git
-    choco install make
+    sudo apt install git
+    sudo apt install make
+    sudo apt install automake
 
 Get PrideKitty
    
@@ -78,7 +81,11 @@ Get PrideKitty
 Compile
 
     cd .\Pridekitty\
-    make
+    make install
+    
+Run 
+    
+    pridekitty
     
 
 ## References, etc.
