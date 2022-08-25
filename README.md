@@ -25,7 +25,10 @@ To use the telnet server, you need to add a configuration that runs:
     pridekitty -t
 
 
-## Licenses, References, etc.
+## References, etc.
 
-The original source of the nyancat animation is
-[prguitarman](http://www.prguitarman.com/index.php?id=348).
+The original source of the nyancat animation :
+[prguitarman](http://www.prguitarman.com/index.php?id=348)
+
+Origin source code for nyancat :
+https://github.com/klange/nyancat
