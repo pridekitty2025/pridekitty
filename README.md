@@ -76,6 +76,7 @@ Get additional apps (optional)
 
 Get PrideKitty
    
+    cd 
     git clone https://github.com/ChrisMion2022/Pridekitty
     
 Compile
