@@ -1,6 +1,8 @@
 /*
-
- * Edited by:            C. Mion
+ * Developed by:            K. Lange
+ *                          http://github.com/klange/nyancat
+ *
+ * Edited by:               C. Mion
  *                          https://github.com/ChrisMion2022/Pridekitty
  *
  * 40-column support by:    Peter Hazenberg
