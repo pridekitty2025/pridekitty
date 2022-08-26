@@ -89,7 +89,7 @@ Run
     pridekitty
     
 
-## References
+## Resources 
 
 The original source of the nyancat animation :
 [prguitarman](http://www.prguitarman.com/index.php?id=348)
