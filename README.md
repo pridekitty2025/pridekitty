@@ -41,6 +41,7 @@ Get Homebrew first
 Get additional apps (optional)   
     
     brew install git && brew install make && brew install automake
+    xcode-select --install
 
 Get PrideKitty
     
