@@ -59,35 +59,7 @@ Run pridekitty
     
 ## Setup with Windows
 
-First run Powershell as Administrator
-
-    cd $env:USERPROFILE
-
-Download, Install WSL
-
-    wsl --install -d Ubuntu
-    
-Run as Administrator WSL
-    
-Get additional apps (optional)
-
-    sudo apt install git
-    sudo apt install make
-    sudo apt install automake
-
-Get PrideKitty
-   
-    cd 
-    git clone https://github.com/ChrisMion2022/Pridekitty
-    
-Compile
-
-    cd .\Pridekitty\
-    make install
-    
-Run 
-    
-    pridekitty
+Install Virtual Box and install Ubuntu, that's how it goes...
     
 
 ## Resources 
