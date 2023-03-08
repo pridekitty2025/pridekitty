@@ -11,22 +11,20 @@ An animation that flashes BLM in a LGBTQ+ color theme
 
 Open terminal 
 
-    sudo apt install git-all
+    sudo apt install git-all -y
+    sudo apt install make -y
+    sudo apt install gcc -y
     git clone https://github.com/ChrisMion2022/Pridekitty
 
 Then build the C application:
 
+    cd Prifekitty
     make install
 
 You can run the C application standalone.
 
     pridekitty 
    
-
-To use the telnet server, you need to add a configuration that runs:
-
-    pridekitty -t
-    
     
     
     
