@@ -65,6 +65,7 @@ Open Command Prompt as Administrator & Install WSL
 At reboot WSL should start by itself, if not start as admin, set your username and password then run this 
 
     sudo passwd root
+    sudo apt-get update
     sudo apt install make -y
     sudo apt install gcc -y
     sudo apt install tcc -y 
