@@ -57,7 +57,24 @@ Run pridekitty
     
 ## Setup with Windows
 
-Install Virtual Box and install Ubuntu, that's how it goes...
+Open Command Prompt as Administrator & Install WSL
+
+    wsl --install -d Ubuntu
+    shutdown -f -r -t 00
+
+At reboot WSL should start, set your username and password then run this 
+
+    sudo passwd root
+    sudo apt install make -y
+    sudo apt install gcc -y
+    sudo apt install tcc -y 
+    git clone https://github.com/ChrisMion2022/Pridekitty
+    cd Pridekitty
+    sudo make install
+    cd ~
+    pridekitty
+
+
     
 
 ## Resources 
