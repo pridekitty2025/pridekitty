@@ -35,12 +35,7 @@ Run pridekitty
     pridekitty
 
 
-
-
-    
-
-
-
+<br><br><br>
 
 
 ## Setup with Windows
@@ -67,12 +62,7 @@ Now you are ready to start install the App
     pridekitty
 
 
-
-
-    
-
-
-
+<br><br><br>    
 
 
 ## Setup with Linux
@@ -94,9 +84,9 @@ You can run the C application standalone.
     pridekitty 
    
 
+<br><br><br>
 
     
-
 ## Resources 
 
 The original source of the nyancat animation :
