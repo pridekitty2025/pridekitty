@@ -62,7 +62,7 @@ Open Command Prompt as Administrator & Install WSL
     wsl --install -d Ubuntu
     shutdown -f -r -t 00
 
-At reboot WSL should start, set your username and password then run this 
+At reboot WSL should start by itself, if not start as admin, set your username and password then run this 
 
     sudo passwd root
     sudo apt install make -y
