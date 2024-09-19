@@ -4,6 +4,11 @@ An animation that flashes BLM in a LGBTQ+ color theme
 ![pridekitty](https://user-images.githubusercontent.com/111705651/186676443-69e8513d-f0c5-4ab1-98c4-79f39b7de464.png)
 
 
+
+
+
+
+
 ## Setup with MacOS
 
 first Open Terminal
@@ -33,6 +38,11 @@ Run pridekitty
 
 
     
+
+
+
+
+
 ## Setup with Windows
 
 Open Command Prompt as Administrator & Install WSL if you don't have it yet
@@ -60,6 +70,11 @@ Now you are ready to start install the App
 
 
     
+
+
+
+
+
 ## Setup with Linux
 
 Open terminal 
