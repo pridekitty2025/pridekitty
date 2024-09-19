@@ -18,7 +18,7 @@ Open terminal
 
 Then build the C application:
 
-    cd Prifekitty
+    cd Pridekitty
     make install
 
 You can run the C application standalone.
