@@ -29,32 +29,10 @@ Run pridekitty
     
     pridekitty
 
+
+
+
     
-
-
-## Setup with Linux
-
-Open terminal 
-
-    sudo apt install git-all -y
-    sudo apt install make -y
-    sudo apt install gcc -y
-    git clone https://github.com/ChrisMion2022/Pridekitty
-
-Then build the C application:
-
-    cd Pridekitty
-    make install
-
-You can run the C application standalone.
-
-    pridekitty 
-   
-    
-    
-    
-
-   
 ## Setup with Windows
 
 Open Command Prompt as Administrator & Install WSL if you don't have it yet
@@ -79,6 +57,27 @@ Now you are ready to start install the App
     pridekitty
 
 
+
+
+    
+## Setup with Linux
+
+Open terminal 
+
+    sudo apt install git-all -y
+    sudo apt install make -y
+    sudo apt install gcc -y
+    git clone https://github.com/ChrisMion2022/Pridekitty
+
+Then build the C application:
+
+    cd Pridekitty
+    make install
+
+You can run the C application standalone.
+
+    pridekitty 
+   
 
 
     
