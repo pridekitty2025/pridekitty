@@ -30,6 +30,7 @@
 #include <time.h>
 #include <sys/ioctl.h>
 #include <termios.h>
+#include <getopt.h> 
 
 /*
  * The animation frames are stored separately in
@@ -135,23 +136,23 @@ int main(int argc, char ** argv) {
     struct winsize w;
 
     static struct option long_opts[] = {
-        {"help",       no_argument,       0, 'h'},
-        {"no-counter", no_argument,       0, 'n'},
-        {"no-title",   no_argument,       0, 's'},
-        {"no-clear",   no_argument,       0, 'e'},
-        {"delay",      required_argument, 0, 'd'},
-        {"frames",     required_argument, 0, 'f'},
-        {"min-rows",   required_argument, 0, 'r'},
-        {"max-rows",   required_argument, 0, 'R'},
-        {"min-cols",   required_argument, 0, 'c'},
-        {"max-cols",   required_argument, 0, 'C'},
-        {"width",      required_argument, 0, 'W'},
-        {"height",     required_argument, 0, 'H'},
-        {0,0,0,0}
+        {"help",       no_argument,       NULL, 'h'},
+        {"no-counter", no_argument,       NULL, 'n'},
+        {"no-title",   no_argument,       NULL, 's'},
+        {"no-clear",   no_argument,       NULL, 'e'},
+        {"delay",      required_argument, NULL, 'd'},
+        {"frames",     required_argument, NULL, 'f'},
+        {"min-rows",   required_argument, NULL, 'r'},
+        {"max-rows",   required_argument, NULL, 'R'},
+        {"min-cols",   required_argument, NULL, 'c'},
+        {"max-cols",   required_argument, NULL, 'C'},
+        {"width",      required_argument, NULL, 'W'},
+        {"height",     required_argument, NULL, 'H'},
+        {NULL, 0, NULL, 0}
     };
 
-    int index, c;
-    while ((c = getopt_long(argc, argv, "eshned:f:r:R:c:C:W:H:", long_opts, &index)) != -1) {
+    int opt_index = 0;
+    while ((c = getopt_long(argc, argv, "eshned:f:r:R:c:C:W:H:", long_opts, &opt_index)) != -1) {
         switch (c) {
             case 'e':
                 clear_screen = 0;
