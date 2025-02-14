@@ -76,8 +76,7 @@ Open terminal
 
 Then build the C application:
 
-    cd Pridekitty
-    make install
+    cd Pridekitty && sudo make install && cd ~
 
 You can run the C application standalone.
 
