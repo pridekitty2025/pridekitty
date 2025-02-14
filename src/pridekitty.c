@@ -1,17 +1,22 @@
+/*
+ * Pridekitty - Terminal Animation Renderer
+ * Original concept by K. Lange, modified for standalone use
+ */
+
 #define _XOPEN_SOURCE 700  /* POSIX 2008 for usleep */
 #include <ctype.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
 #include <stdlib.h>
-#include <unistd.h>       /* For usleep */
+#include <unistd.h>
 #include <signal.h>
 #include <time.h>
 #include <sys/ioctl.h>
 #include <termios.h>
-#include <getopt.h>      /* For getopt_long */
+#include <getopt.h>
 
-#include "animation.c"   /* Animation frames */
+#include "animation.c"
 
 /* Global configuration */
 const char * colors[256] = {NULL};
@@ -132,7 +137,7 @@ int main(int argc, char **argv) {
                 min_row = (FRAME_HEIGHT - atoi(optarg)) / 2;
                 max_row = (FRAME_HEIGHT + atoi(optarg)) / 2;
                 break;
-            /* Handle other options similarly */
+            default: break;
         }
     }
 
@@ -154,13 +159,23 @@ int main(int argc, char **argv) {
         case 1:  /* 256-color */
             colors[','] = "\033[48;5;17m"; 
             colors['.'] = "\033[48;5;231m";
-            /* Add other color mappings */
+            colors['\''] = "\033[48;5;16m";
+            colors['@'] = "\033[48;5;230m";
+            colors['$'] = "\033[48;5;45m";
+            colors['-'] = "\033[48;5;162m";
+            colors['>'] = "\033[48;5;196m";
+            colors['&'] = "\033[48;5;214m";
+            colors['+'] = "\033[48;5;226m";
+            colors['#'] = "\033[48;5;118m";
+            colors['='] = "\033[48;5;19m";
+            colors[';'] = "\033[48;5;55m";
+            colors['*'] = "\033[48;5;235m";
+            colors['%'] = "\033[48;5;175m";
             break;
         case 6:  /* VT220 */
             output = "::";
             always_escape = 1;
             break;
-        /* Handle other terminal types */
     }
 
     /* Set display boundaries */
@@ -190,16 +205,47 @@ int main(int argc, char **argv) {
         
         for(int y = min_row; y < max_row; y++) {
             for(int x = min_col; x < max_col; x++) {
-                /* Animation rendering logic */
+                char color;
+                if (y > 23 && y < 43 && x < 0) {
+                    const char *rainbow = ",,>>&&&+++###==;;;,,";
+                    int mod_x = ((-x+2) % 16) / 8;
+                    if ((frame_idx / 2) % 2) mod_x = 1 - mod_x;
+                    color = rainbow[mod_x + y-23];
+                    color = color ? color : ',';
+                } else if (x < 0 || y < 0 || y >= FRAME_HEIGHT || x >= FRAME_WIDTH) {
+                    color = ',';
+                } else {
+                    color = frames[frame_idx][y][x];
+                }
+
+                if (always_escape) {
+                    printf("%s", colors[(int)color]);
+                } else {
+                    if (color != last_color && colors[(int)color]) {
+                        last_color = color;
+                        printf("%s%s", colors[(int)color], output);
+                    } else {
+                        printf("%s", output);
+                    }
+                }
             }
             newline(1);
         }
 
         if (show_counter) {
-            double elapsed = difftime(time(NULL), start);
-            printf("\033[1;37mRuntime: %.0fs\033[0m", elapsed);
+            time(&current);
+            double diff = difftime(current, start);
+            int nLen = digits((int)diff);
+            int width = (terminal_width - 29 - nLen) / 2;
+            while (width-- > 0) printf(" ");
+            printf("\033[1;37mNyaning for %0.0f seconds!\033[J\033[0m", diff);
         }
 
         /* Frame control */
         if (frame_count && ++frames_shown >= frame_count) finish();
-        frame_idx = frames[frame_idx+1] ? frame_idx+1
+        frame_idx = frames[frame_idx+1] ? frame_idx+1 : 0;
+        usleep(delay_ms * 1000);
+    }
+
+    return 0;
+}
