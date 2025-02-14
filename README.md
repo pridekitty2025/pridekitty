@@ -22,13 +22,13 @@ Get additional apps (optional)
     brew install git && brew install make && brew install automake
     xcode-select --install
 
-Get PrideKitty
+Get pridekitty
     
-    git clone https://github.com/ChrisMion2022/Pridekitty
+    git clone https://github.com/ChrisMion2022/pridekitty
     
 Make pridekitty    
     
-    cd Pridekitty && make && sudo mv ./src/pridekitty /usr/local/bin/
+    cd pridekitty && make && sudo mv ./src/pridekitty /usr/local/bin/
    
 Run pridekitty   
     
@@ -55,9 +55,9 @@ Now you are ready to start install the App
     sudo apt install make -y
     sudo apt install gcc -y
     sudo apt install tcc -y 
-    git clone https://github.com/ChrisMion2022/Pridekitty
-    cd Pridekitty
-    make install
+    git clone https://github.com/ChrisMion2022/pridekitty
+    cd pridekitty
+    sudo make install
     cd ~
     pridekitty
 
@@ -72,11 +72,11 @@ Open terminal
     sudo apt install git-all -y
     sudo apt install make -y
     sudo apt install gcc -y
-    git clone https://github.com/ChrisMion2022/Pridekitty
+    git clone https://github.com/ChrisMion2022/pridekitty
 
 Then build the C application:
 
-    cd Pridekitty && sudo make install && cd ~
+    cd pridekitty && sudo make install && cd ~
 
 You can run the C application standalone.
 
