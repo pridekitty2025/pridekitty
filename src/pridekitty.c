@@ -195,7 +195,8 @@ int main(int argc, char **argv) {
     printf(clear_screen ? "\033[H\033[2J\033[?25l" : "\033[s");
 
     /* Animation loop */
-    time_t start = time(NULL);
+    time_t start, current;
+    time(&start);
     size_t frame_idx = 0;
     unsigned int frames_shown = 0;
     char last_color = 0;
