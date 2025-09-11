@@ -28,7 +28,7 @@ Get additional apps (optional)
 
 Get pridekitty
     
-    git clone https://github.com/ChrisMion2022/pridekitty
+    git clone https://github.com/pridekitty2025/pridekitty
     
 Make pridekitty    
     
@@ -59,7 +59,7 @@ Now you are ready to start install the App
     sudo apt install make -y
     sudo apt install gcc -y
     sudo apt install tcc -y 
-    git clone https://github.com/ChrisMion2022/pridekitty
+    git clone https://github.com/pridekitty2025/pridekitty
     cd pridekitty
     sudo make install
     cd ~
