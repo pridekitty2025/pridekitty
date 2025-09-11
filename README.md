@@ -7,7 +7,9 @@ An animation that flashes BLM in a LGBTQ+ color theme
 
 <br><br><br>
 
-
+## Setup For Windows
+open the link, download and install
+https://github.com/ChrisMion2022/pridekitty/blob/main/PrideKitty-Installer.exe
 
 ## Setup with MacOS
 
