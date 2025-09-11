@@ -7,12 +7,10 @@ An animation that flashes BLM in a LGBTQ+ color theme
 
 <br><br><br>
 
-## Setup For Windows
-Click the link, follow the red arrows 1 and 2 ro download, if using MS Edge, choose to Keep the file anyway, then Install
-https://github.com/ChrisMion2022/pridekitty/blob/main/PrideKitty-Installer.exe
+## Setup For Windows - Video
 
-<img width="1593" height="634" alt="Download" src="https://github.com/user-attachments/assets/e20d6d26-88e9-43d5-82ec-7bd6414147b9"/>
-
+"How to install the animation" - Video :
+https://youtu.be/RSplGOEr9n4
 
 
 ## Setup with MacOS
