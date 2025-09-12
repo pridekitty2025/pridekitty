@@ -10,7 +10,7 @@ An animation that flashes BLM in a LGBTQ+ color theme
 ## Setup For Windows - Video
 
 "How to install the animation" - Video :
-<br><br<br>
+<br><br><br>
 
 ## Setup with MacOS
 
