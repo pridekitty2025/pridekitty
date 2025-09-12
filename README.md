@@ -10,7 +10,7 @@ An animation that flashes BLM in a LGBTQ+ color theme
 ## Setup For Windows - Video
 
 "How to install the animation" - Video :
-
+<br><br<br>
 
 ## Setup with MacOS
 
@@ -41,6 +41,26 @@ Run pridekitty
 <br><br><br>
 
 
+## Setup with Linux
+
+Open terminal 
+
+    sudo apt install git-all -y
+    sudo apt install make -y
+    sudo apt install gcc -y
+    git clone https://github.com/ChrisMion2022/pridekitty
+
+Then build the C application:
+
+    cd pridekitty && sudo make install && cd ~
+
+You can run the C application standalone.
+
+    pridekitty 
+   
+
+<br><br><br>
+
 ## Setup with WSL on Windows
 
 Open Command Prompt as Administrator & Install WSL if you don't have it yet
@@ -66,28 +86,6 @@ Now you are ready to start install the App
 
 
 <br><br><br>    
-
-
-## Setup with Linux
-
-Open terminal 
-
-    sudo apt install git-all -y
-    sudo apt install make -y
-    sudo apt install gcc -y
-    git clone https://github.com/ChrisMion2022/pridekitty
-
-Then build the C application:
-
-    cd pridekitty && sudo make install && cd ~
-
-You can run the C application standalone.
-
-    pridekitty 
-   
-
-<br><br><br>
-
     
 ## Resources 
 
