@@ -42,7 +42,7 @@ Run pridekitty
 <br><br><br>
 
 
-## Setup with Windows
+## Setup with WSL on Windows
 
 Open Command Prompt as Administrator & Install WSL if you don't have it yet
 
